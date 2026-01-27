@@ -17,8 +17,6 @@ export default function AddProductScreen() {
     setMagasin('');
   };
 
-  console.log("JE SUIS ICI !");
-
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Nouvelle Référence</Text>
