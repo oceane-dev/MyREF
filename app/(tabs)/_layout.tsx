@@ -3,7 +3,7 @@ import { Tabs } from 'expo-router';
 
 export default function TabLayout() {
   return (
-    <Tabs screenOptions={{ headerShown: true }}>
+    <Tabs>
       <Tabs.Screen
         name="index"
         options={{
@@ -12,7 +12,7 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
-        name="explore"
+        name="ajouter"
         options={{
           title: 'Ajouter',
           tabBarIcon: ({ color }) => <FontAwesome6 name="circle-plus" size={20} color={color} />,
