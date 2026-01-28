@@ -1,11 +1,12 @@
-import { View, Text, StyleSheet, FlatList } from 'react-native';
+import { Link } from 'expo-router';
+import { FlatList, StyleSheet, Text, View } from 'react-native';
 
 export default function HomeScreen() {
   // On simule une petite liste de magasins pour tester l'affichage
   const magasins = [
-    { id: '1', nom: 'Auchan', ville: 'Lille' },
-    { id: '2', nom: 'Carrefour', ville: 'Paris' },
-    { id: '3', nom: 'Lidl', ville: 'Lyon' },
+    { id: '1', nom: 'Match', ville: 'Lille' },
+    { id: '2', nom: 'Carrefour', ville: 'Lille' },
+    { id: '3', nom: 'Lidl', ville: 'Lille' },
   ];
 
   return (
@@ -22,6 +23,7 @@ export default function HomeScreen() {
           </View>
         )}
       />
+      <Link href="/ajouter">Aller à la page Ajouter</Link>
     </View>
   );
 }
